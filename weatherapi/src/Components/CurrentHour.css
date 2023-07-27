@@ -1,0 +1,37 @@
+.current-hour-icon {
+  height: 300px;
+  width: 350px;
+  margin-bottom: 0px;
+}
+.current-hour-div {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.temperature-desc,
+.temperature-desc-bold {
+  color: #030348;
+  display: flex;
+  text-align: center;
+  word-spacing: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.temperature-desc-bold {
+  font-weight: bold;
+  font-size: large;
+}
+.current-hour-description {
+  color: white;
+  width: 350px;
+  text-align: center;
+}
+.temp-humidity-desc-div {
+  height: 120px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

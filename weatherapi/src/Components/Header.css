@@ -1,0 +1,54 @@
+.header {
+    height: auto;
+    background-color: #759eda;
+  }
+  
+  .header-fieldset {
+    height: 120px;
+    border: none;
+  }
+  
+  button {
+    background-color: #759eda;
+    width: 230px;
+    height: 65px;
+    font-size: 20px;
+    background-color: rgb(88, 121, 199);
+    border: none;
+    padding: 15px;
+    color: #030348;
+  }
+  .london {
+    border: none;
+    background-color: rgb(117, 158, 218);
+    outline: none;
+    color: white;
+    width: 90px;
+    margin-right: 10%;
+    margin-top: 46px;
+    font-size: 25px;
+    margin-left: 15px;
+  }
+  
+  ::placeholder {
+    color: white;
+    /* font-family: Raleway; */
+    font-size: 30px;
+  }
+  
+  /* btn color #759EDA */
+  /* body color #9CCEF4 */
+  /* fonts color #030348 */
+  
+  @media only screen and (max-width: 400px) {
+    .london {
+      width: 90px;
+    }
+    button {
+      width: 200px;
+      height: 65px;
+      font-size: 20px;
+      padding: 15px;
+    }
+  }
+  
