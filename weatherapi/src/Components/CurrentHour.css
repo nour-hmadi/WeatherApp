@@ -27,6 +27,10 @@
   color: white;
   width: 350px;
   text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  margin-top: -30px;
+  margin-bottom: 15px;;
 }
 .temp-humidity-desc-div {
   height: 120px;

@@ -1,0 +1,276 @@
+/* 
+.login-form-input{
+  background-color:;
+} */
+.left-right-wrapper form input {
+  outline: none;
+  border: none;
+  padding: 7px;
+  background-color: transparent;
+  border-bottom: 1px solid #03034890;
+  color: whitesmoke;
+}
+
+.left-right-wrapper form button {
+  background-color: #5879c7;
+  background-image: none;
+  height: 45px;
+  color: #030348;
+  width: 150px;
+  border: transparent;
+  font-size: 20px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.J-popup-wrapper {
+  height: 100vh;
+  /* inset: 0;
+      position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.all-wrapper {
+  width: 800px;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.all-wrapper-child {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9ccef490;
+  display: flex;
+  overflow: hidden;
+}
+
+.jiji {
+  flex-shrink: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 22px;
+  color: #030348;
+  text-align: center;
+}
+
+.jiji button {
+  background-color: #5879c7;
+  height: 45px;
+  color: #030348;
+  width: 150px;
+  border: none;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.label-auth > ::placeholder {
+  color: yellow;
+}
+.label-login > ::placeholder {
+  color:yellow;
+}
+
+.label-auth > input {
+  color: yellow;
+}
+
+.main-f-wrapper {
+  height: 100%;
+  width: 93%;
+  position: absolute;
+  top: 100%;
+}
+
+.J-forms-wrapper {
+  width: 50%;
+  height: 120%;
+  font-size: 22px;
+  position: absolute;
+  top: -110%;
+  overflow: hidden;
+  transition: 0.3s all ease;
+  transform: translateX(0%);
+}
+
+.J-forms-wrapper-zih {
+  width: 50%;
+  height: 140%;
+  background-color: none;
+  position: absolute;
+  top: -120%;
+  z-index: 2;
+  overflow: hidden;
+  font-size: 22px;
+  transition: 0.3s ease;
+  transform: translateX(100%);
+}
+
+.left-right-wrapper {
+  height: 100%;
+  width: 200%;
+  display: flex;
+  overflow: hidden;
+  transition: 0.7s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translate(0%);
+}
+
+.left-right-wrapper-zih {
+  transition: 0.7s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translate(-50%);
+}
+.left-right-wrapper form {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: #759eda;
+}
+
+.svg-wrapper-1 {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.svg-wrapper-1:nth-of-type(1) svg {
+  overflow: visible;
+  margin-top: 10%;
+  margin-left: 40%;
+  transform: rotate(343deg);
+  transition: 0.7s all ease;
+  transform-origin: 45%;
+}
+
+.svg-wrapper-1:nth-of-type(2) svg {
+  transition: 0.7s all ease;
+  margin-left: -50%;
+  transform: rotate(-360deg);
+  transform-origin: 45%;
+}
+
+.svg-wrapper-12:nth-of-type(1) svg {
+  transition: 0.7s all ease;
+  transform: rotate(193deg);
+}
+
+.svg-wrapper-12:nth-of-type(2) svg {
+  transition: 0.7s all ease;
+  transform: rotate(330deg);
+}
+
+.svg-head {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 700px;
+}
+.label-auth,
+.auth {
+  color: #030348;
+}
+
+.login-label {
+  color: #030348;
+}
+.error-message {
+  color: white;
+  padding: 5px;
+  border-bottom: 1px solid red;
+  font-size: 13px;
+}
+
+/* responsive to mobile */
+/* For devices with a screen size of 600px or less */
+@media (max-width: 600px) {
+  /* Shared styles */
+  .form-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .input-field {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  /* Register page specific styles */
+  .register-wrapper {
+    height: 100vh;
+  }
+
+  .register-form {
+    width: 100%;
+    height: auto;
+    position: static;
+    top: 0;
+    transform: none;
+  }
+
+  .register-form h2 {
+    font-size: 18px;
+  }
+
+  .register-form label {
+    font-size: 16px;
+  }
+
+  .register-form input[type="text"],
+  .register-form input[type="password"] {
+    font-size: 16px;
+  }
+
+  /* Login page specific styles */
+  .login-wrapper {
+    height: 100vh;
+  }
+
+  .login-form {
+    width: 100%;
+    height: auto;
+    position: static;
+    top: 0;
+    transform: none;
+  }
+
+  .login-form h2 {
+    font-size: 18px;
+  }
+
+  .login-form label {
+    font-size: 16px;
+  }
+
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    font-size: 16px;
+  }
+}

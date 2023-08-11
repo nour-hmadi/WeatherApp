@@ -1,25 +1,29 @@
 import "./App.css";
-import CurrentHour from "./Components/CurrentHour";
-import Header from "./Components/Header";
-import HourWeather from "./Components/HourWeather";
+import WeatherData from "./Components/WeatherData";
+import Home from "./Pages/Home";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; //npm i react-router-dom
+import Auth from "./Pages/Auth";
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <Header />
-      <div className="body">
-        <CurrentHour />
-        <div className="hour-array">
-          <HourWeather />
-          <HourWeather />
-          <HourWeather />
-          <HourWeather />
-          <HourWeather />
-          <HourWeather />
-          <HourWeather />
-        </div>
-      </div>
+     
+    <Routes>
+          <Route exact path="/" element={<Auth />} />
+          <Route exact path="/home" element={<Home />} />
+
+
+
+
+
+        </Routes>
+       
+       
+     
+      <WeatherData />
     </div>
+    </BrowserRouter>
   );
 }
 

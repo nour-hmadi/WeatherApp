@@ -30,8 +30,8 @@
     margin-left: 15px;
   }
   
-  ::placeholder {
-    color: white;
+  .example > ::placeholder {
+    color: rgb(200, 206, 206);
     /* font-family: Raleway; */
     font-size: 30px;
   }

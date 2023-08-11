@@ -1,0 +1,11 @@
+
+.body{
+    background-color: #9CCEF4;
+    min-height: 86vh;
+  }
+  
+  .hour-array{
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+  }
